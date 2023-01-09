@@ -1,0 +1,64 @@
+#sidenav {
+  display: none;
+  .sidebar {
+    position: fixed;
+    left: 0;
+    width: 300px;
+    @media (max-width: 768px) {
+      width: 250px;
+    }
+    top: 0;
+    bottom: 0;
+    background: #2098B3;
+    z-index: 999;
+  }
+  .overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .content {
+    ul {
+      list-style: none;
+      padding-left: 10px;
+      li {
+        margin: 10px 0;
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.animateIn {
+  animation: slideIn 0.25s ease-out;
+}
+.animateOut {
+  animation: slideOut 0.25s ease-out;
+}
+
+@keyframes slideIn {
+  0% {
+    margin-left: -250px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -300px;
+  }
+}

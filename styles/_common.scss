@@ -1,0 +1,35 @@
+html {
+  font-size: 16px;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+section {
+  padding-top: 3rem;
+  header {
+    h1 {
+      font-weight: 900 !important;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  &.jcsb {
+    justify-content: space-between;
+  }
+  &.ci {
+    align-items: center;
+  }
+}
+
+.wrap {
+  width: 85%;
+  margin: auto;
+}

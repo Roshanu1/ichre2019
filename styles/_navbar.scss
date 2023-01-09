@@ -1,0 +1,42 @@
+nav {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  .flex {
+    height: calc(7 * 16px);
+    i {
+      font-size: calc(2 * 16px);
+      color: rgba(#000, 0.7);
+      cursor: pointer;
+    }
+    .ichr_logo,
+    .wsu_logo,
+    .ku_logo {
+      height: calc(5 * 16px);
+    }
+    .visit_nepal_logo {
+      height: calc(6 * 16px);
+    }
+  }
+  .one {
+    .one_none {
+      display: none;
+    }
+    @media (max-width: $nav_break_point) {
+      width: 100%;
+      .one_none {
+        display: block;
+      }
+    }
+    .flex {
+      @media (max-width: $nav_break_point) {
+        justify-content: space-between;
+      }
+    }
+  }
+  .two,
+  .three,
+  .four {
+    @media (max-width: $nav_break_point) {
+      display: none;
+    }
+  }
+}
